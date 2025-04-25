@@ -1,0 +1,17 @@
+# Adding jenkins as a hostname
+sudo hostnamectl set-hostname Sonarqube
+
+#changing into jenkins as hostname
+/bin/bash
+
+# To update the environment 
+sudo apt update
+
+# Installing the java 17 long term suported version because Sonarqube work with jdk17 and not 21
+sudo apt install openjdk-17-jdk -y
+
+# Downloading community edition of sonarqube using wget 
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-25.4.0.105899.zip
+
+
+

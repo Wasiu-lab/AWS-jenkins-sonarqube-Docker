@@ -1,0 +1,18 @@
+# To update the environment 
+sudo apt update 
+
+# Adding jenkins as a hostname
+sudo hostnamectl set-hostname jenkins
+
+#changing into jenkins as hostname
+/bin/bash
+
+# Installing the java 21 long term suported version 
+sudo apt install openjdk-21-jdk -y
+
+# Installing jenkins
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key && echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null && sudo apt-get update && sudo apt-get install -y jenkins
+
+# To get the status of jenkins if running and also get the password to log into jenkins GUI
+sudo systemctl status jenkins
+

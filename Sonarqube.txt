@@ -13,5 +13,15 @@ sudo apt install openjdk-17-jdk -y
 # Downloading community edition of sonarqube using wget 
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-25.4.0.105899.zip
 
+#install unzip to unzip the file we downloaded then unzip the file using the unzip command
+sudo apt install unzip && unzip sonarqube-25.4.0.105899.zip
 
+# entering into the unzip file and locating the executable file alignign with the os in use 
+cd sonarqube-25.4.0.105899/bin/linux-x86-64/
+
+#execute the sonar.sh file so as to be able to use the sonarqube.This will display a list of command we can use with sonarqube
+./sonar.sh
+
+# We will run sonarqube using the below and start soanr also 
+./sonar.sh console && ./soanr.sh start
 

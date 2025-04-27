@@ -23,5 +23,5 @@ cd sonarqube-25.4.0.105899/bin/linux-x86-64/
 ./sonar.sh
 
 # We will run sonarqube using the below and start soanr also 
-./sonar.sh console && ./soanr.sh start
+./sonar.sh console
 

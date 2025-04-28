@@ -25,3 +25,4 @@ cd sonarqube-25.4.0.105899/bin/linux-x86-64/
 # We will run sonarqube using the below and start soanr also 
 ./sonar.sh console
 
+# Sonarqube GUI is connected to using the port 9000

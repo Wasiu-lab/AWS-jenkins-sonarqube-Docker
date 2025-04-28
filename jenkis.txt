@@ -16,3 +16,11 @@ sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debi
 # To get the status of jenkins if running and also get the password to log into jenkins GUI
 sudo systemctl status jenkins
 
+# Jenkins GUI is connected to using the port 8080
+
+#switch to Jenkins user to access docker through jenkins
+sudo su jenkins
+
+#SSH into the docker server though permission will have to be given in docker
+#to ssh 
+ssh ubuntu@public_ip
